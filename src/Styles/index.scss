@@ -1,0 +1,11 @@
+@import "./Color/Color";
+@import "./Font/Font";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: {
+    family: $barlow-semi-condensed;
+  }
+}

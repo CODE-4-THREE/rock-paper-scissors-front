@@ -1,10 +1,7 @@
-import { useState } from "react";
-import "./App.css";
+import "./Styles/index.scss";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="App">ROCK PAPER SCISSORS</div>;
+  return <div>ROCK PAPER SCISSORS</div>;
 }
 
 export default App;
