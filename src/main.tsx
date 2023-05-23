@@ -7,8 +7,8 @@ import GameSelection from './Components/Atoms/GameSelection/GameSelection';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <>
     <App />
-    <GameSelection text="You picked" selected={'rock'} component={'Componente1'} />
-    <GameSelection text="the house picked" selected={'paper'} house component={'Componente2'} />
+    <GameSelection text="You picked" selected={'rock'} />
+    <GameSelection text="the house picked" house />
     <WinLoseMessage />
   </>
 );
