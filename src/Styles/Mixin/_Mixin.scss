@@ -1,0 +1,9 @@
+@mixin DimensionAndBorderItem($size, $radius) {
+  width: $size;
+  height: $size;
+  border-radius: $radius;
+}
+
+@mixin GradientBackground($color) {
+  background: linear-gradient($color);
+}

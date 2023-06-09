@@ -1,0 +1,35 @@
+@import "/src/Styles/Color/Color";
+@import "/src/Styles/Mixin/Mixin";
+@import "/src/Styles/Class/Class";
+
+$item-border-width: 10px;
+
+.item-container {
+  @extend .center;
+  @include DimensionAndBorderItem(100px, 50%);
+
+  &__layer {
+    @extend .center;
+    @include DimensionAndBorderItem(80px, 50%);
+    transition: background 200ms;
+    background: white;
+  }
+
+  img {
+    transition: transform 1s;
+    -webkit-user-drag: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover &__layer {
+    background: none;
+    box-shadow: none;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
