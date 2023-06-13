@@ -33,3 +33,31 @@ $item-border-width: 10px;
     transform: scale(1.1);
   }
 }
+
+@media (min-width: 576px) {
+  .item-container {
+    @include DimensionAndBorderItem(150px, 50%);
+
+    &__layer {
+      @include DimensionAndBorderItem(100px, 50%);
+    }
+
+    img {
+      width: 50px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .item-container {
+    @include DimensionAndBorderItem(200px, 50%);
+
+    &__layer {
+      @include DimensionAndBorderItem(150px, 50%);
+    }
+
+    img {
+      width: 80px;
+    }
+  }
+}

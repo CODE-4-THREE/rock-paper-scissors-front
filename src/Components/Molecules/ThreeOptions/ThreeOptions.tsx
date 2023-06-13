@@ -1,4 +1,3 @@
-import React from "react";
 import Item from "../../Atoms/Item/Item";
 
 import {
@@ -7,9 +6,11 @@ import {
   ICON_SCISSORS,
 } from "../../../Resources/Images/Images";
 
+import "./ThreeOptions.scss";
+
 export const ThreeOptions = () => {
   return (
-    <div>
+    <div className="three-options-container">
       <Item imageSrc={ICON_ROCK} imageAlt="" className="rock-gradient" />
       <Item imageSrc={ICON_PAPER} imageAlt="" className="paper-gradient" />
       <Item

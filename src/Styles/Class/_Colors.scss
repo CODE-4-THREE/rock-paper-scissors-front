@@ -7,17 +7,17 @@
 
 .paper-gradient {
   @include GradientBackground($paper-gradient);
-  box-shadow: 0 4px blue;
+  box-shadow: 0 5px blue;
 }
 
 .scissors-gradient {
   @include GradientBackground($scissors-gradient);
-  box-shadow: 0 4px #c56c1b;
+  box-shadow: 0 5px #c56c1b;
 }
 
 .rock-gradient {
   @include GradientBackground($rock-gradient);
-  box-shadow: 0 4px #9c1434;
+  box-shadow: 0 5px #9c1434;
 }
 
 .lizard-gradient {
@@ -26,4 +26,18 @@
 
 .cyan-gradient {
   @include GradientBackground($cyan);
+}
+
+@media (min-width: 768px) {
+  .paper-gradient {
+    box-shadow: 0 10px blue;
+  }
+
+  .scissors-gradient {
+    box-shadow: 0 10px #c56c1b;
+  }
+
+  .rock-gradient {
+    box-shadow: 0 10px #9c1434;
+  }
 }

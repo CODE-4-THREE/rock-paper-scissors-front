@@ -1,0 +1,64 @@
+@import "/src/Styles/Class/Common";
+
+.three-options-container {
+  @extend .center;
+
+  position: relative;
+  height: 250px;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  gap: 10px;
+}
+
+@media (min-width: 576px) {
+  .three-options-container {
+    // * restore flex settings for the next media queries
+    flex-direction: row;
+    align-items: start;
+
+    background-image: url("/src/Resources/Images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180px;
+
+    background-size: 250px;
+    height: 350px;
+
+    .item-container:nth-child(1) {
+      position: absolute;
+      left: 60px;
+    }
+
+    .item-container:nth-child(2) {
+      position: absolute;
+      bottom: 50px;
+    }
+
+    .item-container:nth-child(3) {
+      position: absolute;
+      right: 60px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .three-options-container {
+    background-size: 250px;
+    height: 400px;
+
+    .item-container:nth-child(1) {
+      left: 0;
+    }
+
+    .item-container:nth-child(2) {
+      bottom: 0;
+    }
+
+    .item-container:nth-child(3) {
+      right: 0;
+    }
+  }
+}
