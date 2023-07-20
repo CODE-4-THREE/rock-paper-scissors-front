@@ -1,0 +1,29 @@
+.paper-gradient,
+.scissors-gradient,
+.rock-gradient,
+.cyan-gradient {
+  @extend .item-container-layer-common;
+}
+
+.paper-gradient {
+  @include GradientBackground($paper-gradient);
+  box-shadow: 0 4px blue;
+}
+
+.scissors-gradient {
+  @include GradientBackground($scissors-gradient);
+  box-shadow: 0 4px #c56c1b;
+}
+
+.rock-gradient {
+  @include GradientBackground($rock-gradient);
+  box-shadow: 0 4px #9c1434;
+}
+
+.lizard-gradient {
+  @include GradientBackground($lizard-gradient);
+}
+
+.cyan-gradient {
+  @include GradientBackground($cyan);
+}
